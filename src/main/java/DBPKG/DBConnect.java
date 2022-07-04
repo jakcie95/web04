@@ -3,7 +3,7 @@ package DBPKG;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class DBConnect {
+public class DBConnect {//데이터베이스 연결
 	public static Connection getConnection()throws Exception{
 		Class.forName("oracle.jdbc.OracleDriver");
 		Connection con = DriverManager.getConnection(
